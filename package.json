@@ -1,0 +1,17 @@
+{
+    "name": "expressCopy",
+    "version": "1.0.0",
+    "description": "",
+    "main": "index.js",
+    "scripts": {
+        "start": "nodemon express.mjs"
+    },
+    "keywords": [],
+    "author": "",
+    "license": "ISC",
+    "dependencies": {
+        "cors": "^2.8.5",
+        "load-json-file": "^6.2.0",
+        "nodemon": "^2.0.7"
+    }
+}
