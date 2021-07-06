@@ -4,6 +4,7 @@ import loadJson from 'load-json-file';
 
 const app = express();
 
+
 app.use(express.static('./build/'))
 const products = loadJson.sync('./products.json')
 app.get('/products', (req, res) => {
