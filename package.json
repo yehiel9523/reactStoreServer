@@ -12,6 +12,7 @@
     "dependencies": {
         "cors": "^2.8.5",
         "load-json-file": "^6.2.0",
-        "nodemon": "^2.0.7"
+        "nodemon": "^2.0.7",
+        "shabbat-logic": "^1.1.1"
     }
 }
