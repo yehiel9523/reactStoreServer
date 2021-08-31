@@ -1,5 +1,5 @@
 {
-    "name": "expressCopy",
+    "name": "store-server",
     "version": "1.0.0",
     "description": "",
     "main": "index.js",
@@ -13,7 +13,7 @@
         "cors": "^2.8.5",
         "load-json-file": "^6.2.0",
         "mongodb": "^4.0.1",
-        "nodemon": "^2.0.7",
-        "shabbat-logic": "^1.1.1"
+        "mongoose": "^5.13.5",
+        "nodemon": "^2.0.7"
     }
 }
