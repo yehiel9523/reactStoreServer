@@ -52,11 +52,11 @@ export function addProduct(product) {
     // return db.collection('Products').insertOne(product);
 }
 export function deletePoduct(id) {
-    return Product.findOneAndDelete({ id: ObjectId(id) })
+    return Product.findOneAndDelete({ _id: ObjectId(id) })
         // return db.collection('Products').deleteOne({ id: parseInt(id) || id });
 
 }
 export function updateProduct(id, newObj) {
-    return Product.findOneAndUpdate({ id: ObjectId(id) }, newObj)
+    return Product.findOneAndUpdate({ _id: ObjectId(id) }, { $set: newObj })
         // return db.collection('Products').updateOne({ id: parseInt(id) || id }, { $set: newObj })
 }

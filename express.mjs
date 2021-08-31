@@ -16,7 +16,7 @@ app.use(express.json());
 // })
 
 app.use(express.static('./build/'));
-const products = loadJson.sync('./products.json')
+// const products = loadJson.sync('./products.json')
 
 app.get('/products', async(req, res) => {
     res.send(await getProducts(req.query));
@@ -43,10 +43,22 @@ app.get('/products/:_id', async(req, res) => {
     }
 })
 app.delete('/products/:id', async(req, res) => {
-    res.send(await deletePoduct(req.params.id))
+    try {
+        res.send(await deletePoduct(req.params.id))
+    } catch (err) {
+        console.log(err.message)
+        res.status(400)
+        res.send(err.message)
+    }
 })
 app.put('/products/:id', async(req, res) => {
-    res.send(await updateProduct(req.params.id, req.body))
+    try {
+        res.send(await updateProduct(req.params.id, req.body))
+    } catch (err) {
+        console.log(err.message)
+        res.status(400)
+        res.send(err.message)
+    }
 })
 
 app.listen(8000);
