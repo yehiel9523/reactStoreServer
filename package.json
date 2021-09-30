@@ -5,6 +5,7 @@
     "main": "index.js",
     "scripts": {
         "start": "nodemon express.mjs"
+        "start:prod": "node express.mjs"
     },
     "keywords": [],
     "author": "",
