@@ -1,7 +1,7 @@
 import { ObjectId } from 'mongodb';
 import mongoose from 'mongoose';
 
-mongoose.connect('mongodb://localhost:27017/store', { useNewUrlParser: true, useUnifiedTopology: true, useFindAndModify: false });
+mongoose.connect('mongodb+srv://yehiel9523:d.dag.d.p@cluster0.xjoo6.mongodb.net/store?retryWrites=true&w=majority', { useNewUrlParser: true, useUnifiedTopology: true, useFindAndModify: false });
 const productsSchema = new mongoose.Schema({
     title: { type: String, required: true },
     price: Number,
